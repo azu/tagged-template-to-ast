@@ -17,10 +17,20 @@ describe("#toAST", function () {
         var expected = `var a = "string"`;
         astEqual(astNode, expected);
     });
-    it("support `${var} code`", function () {
+    it("support first `${var} code` pattern", function () {
         var nodeForInline = parse('"string"');
         var astNode = toAST`${nodeForInline}; var a;`;
         var expected = `"string";var a;`;
+        astEqual(astNode, expected);
+    });
+    it("support inline AST Node to body ", function () {
+        var aNodeForBody = parse("sum(1);");
+        var astNode = toAST`if(true){
+            ${aNodeForBody}
+        }`;
+        var expected = `if(true){
+            sum(1);
+        }`;
         astEqual(astNode, expected);
     });
     it("support function expression", function () {

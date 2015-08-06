@@ -30,13 +30,32 @@ var astNode = toAST`var a = ${nodeForInline};`;
 
 Combine `code` with AST Node.
 
-
 ```js
+import {parse} from "esprima"
+import toAST from "tagged-template-to-ast"
 var nodeForInline = parse('"string"');
 var astNode = toAST`var a = ${nodeForInline}`;
 // astNode is the AST of `var a = "string";`
 ```
 
+Could inline to body block too!
+
+```js
+import {parse} from "esprima"
+import toAST from "tagged-template-to-ast"
+import astEqual from "ast-equal"
+var aNodeForBody = parse("sum(1);");
+var astNode = toAST`if(true){
+    ${aNodeForBody}
+}`;
+var expected = `if(true){
+    sum(1);
+}`;
+// test helper to assert JavaScript AST equality.
+// https://github.com/azu/ast-equal
+astEqual(astNode, expected);
+
+```
 
 ## Tests
 
