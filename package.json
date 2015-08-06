@@ -1,0 +1,28 @@
+{
+  "name": "tagged-template-to-ast",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/tagged-template-toAST.git"
+  },
+  "author": "azu",
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/tagged-template-toAST",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/tagged-template-toAST/issues"
+  },
+  "version": "1.0.0",
+  "description": "Tagged template string function for AST.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ast",
+    "template",
+    "utils"
+  ]
+}
