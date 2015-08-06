@@ -1,8 +1,10 @@
 # tagged-template-to-ast
 
-`toAST` function that is used for tagged template string.
+`toAST` template tagged function that inline AST Node to source code.
 
 Combine source code with AST Node.
+
+for more information about **tagged template strings** and see [developer.mozilla.org/docs/Web/JavaScript/Reference/template_strings](https://developer.mozilla.org/docs/Web/JavaScript/Reference/template_strings)
 
 ## Installation
 
