@@ -2,7 +2,7 @@
 
 `toAST` function that is used for tagged template string.
 
-Combine source code` with AST Node.
+Combine source code with AST Node.
 
 ## Installation
 
@@ -10,8 +10,19 @@ Combine source code` with AST Node.
 
 ## Usage
 
+### `toAST` : AST
+
+`toAST` tag function help to inline AST Node to source code.
+
+```js
+toAST`var foo = ${ASTNode}`; // return AST
+```
+
+Example:
+
 ```js
 import toAST from "tagged-template-to-ast"
+// `function(){}` expression
 var nodeForInline = {
     "type": "FunctionExpression",
     "id": null,
@@ -54,12 +65,11 @@ var expected = `if(true){
 // test helper to assert JavaScript AST equality.
 // https://github.com/azu/ast-equal
 astEqual(astNode, expected);
-
 ```
 
 ## Tests
 
-- [ ] Write How to Tests
+    npm test
 
 ## Contributing
 
