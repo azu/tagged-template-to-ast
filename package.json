@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/azu/tagged-template-toAST/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tagged template string function for AST.",
   "main": "lib/toAST.js",
   "files": [
