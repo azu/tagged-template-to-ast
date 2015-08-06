@@ -18,11 +18,22 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "ast",
     "template",
     "utils"
-  ]
+  ],
+  "devDependencies": {
+    "ast-equal": "^1.0.1",
+    "babel": "^5.8.21",
+    "espower-babel": "^3.2.0",
+    "mocha": "^2.2.5",
+    "power-assert": "^0.11.0"
+  },
+  "dependencies": {
+    "escodegen": "^1.6.1",
+    "esprima": "^2.5.0"
+  }
 }

@@ -2,6 +2,8 @@
 "use strict";
 import assert from "power-assert"
 import toAST from "../src/toAST"
+import {parse} from "esprima"
+import astEqual from "ast-equal"
 describe("#toAST", function () {
     it("should return AST Node", function () {
         var nodeForInline = parse(1);
