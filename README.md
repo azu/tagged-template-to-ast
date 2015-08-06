@@ -1,4 +1,5 @@
-# tagged-template-to-ast
+# tagged-template-to-ast [![Build Status](https://travis-ci.org/azu/tagged-template-to-ast.svg?branch=master)](https://travis-ci.org/azu/tagged-template-to-ast)
+
 
 `toAST` template tagged function that inline AST Node to source code.
 
