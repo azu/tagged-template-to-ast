@@ -23,7 +23,8 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "watch": "babel src --out-dir lib --watch --source-maps",
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "ast",
